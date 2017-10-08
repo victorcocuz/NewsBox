@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="margin_negative_medium">-8dp</dimen>
+    <dimen name="margin_xsmall">2dp</dimen>
+    <dimen name="margin_small">4dp</dimen>
+    <dimen name="margin_medium">8dp</dimen>
+    <dimen name="margin_large">16dp</dimen>
+    <dimen name="margin_xlarge">24dp</dimen>
+    <dimen name="margin_xxlarge">32dp</dimen>
+
+    <dimen name="text_xxsmall">10sp</dimen>
+    <dimen name="text_xsmall">12sp</dimen>
+    <dimen name="text_small">14sp</dimen>
+    <dimen name="text_medium">16sp</dimen>
+    <dimen name="text_large">18sp</dimen>
+    <dimen name="text_xlarge">22sp</dimen>
+
+    <dimen name="container_xsmall">16dp</dimen>
+    <dimen name="container_small">32dp</dimen>
+    <dimen name="container_medium">48dp</dimen>
+    <dimen name="container_medium_large">56dp</dimen>
+    <dimen name="container_large">60dp</dimen>
+    <dimen name="container_xlarge">120dp</dimen>
+    <dimen name="container_xxlarge">180dp</dimen>
+</resources>

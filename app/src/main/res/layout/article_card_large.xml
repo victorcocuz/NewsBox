@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v7.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/article_card_view"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginBottom="@dimen/margin_medium"
+    android:orientation="vertical">
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <ImageView
+            android:id="@+id/article_card_thumbnail"
+            android:layout_width="match_parent"
+            android:adjustViewBounds="true"
+            android:layout_height="wrap_content"
+            android:scaleType="centerCrop" />
+
+        <TextView
+            android:id="@+id/article_card_contributor"
+            android:layout_marginTop="@dimen/margin_small"
+            style="@style/TextShade"
+            tools:text="@string/hint_author" />
+
+        <TextView
+            android:id="@+id/article_card_web_title"
+            style="@style/TextTitle"
+            tools:text="@string/hint_title" />
+
+        <TextView
+            android:id="@+id/article_card_trail_text"
+            style="@style/TextSubtitle"
+            tools:text="@string/hint_trail_text" />
+
+        <View style="@style/SeparationLine" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/container_medium"
+            android:layout_marginBottom="@dimen/margin_negative_medium"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/article_card_web_publication_date"
+                style="@style/TextShade"
+                android:adjustViewBounds="true"
+                tools:text="@string/hint_web_publication_date" />
+
+            <ImageView
+                style="@style/GVSLinearLayoutImage"
+                android:src="@drawable/ic_dark_add" />
+
+            <ImageView
+                style="@style/GVSLinearLayoutImage"
+                android:src="@drawable/ic_dark_share" />
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+</android.support.v7.widget.CardView>

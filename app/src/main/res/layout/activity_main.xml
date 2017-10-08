@@ -1,0 +1,324 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/main_activity_layout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@color/colorAccent"
+    tools:context="com.example.android.newsbox.MainActivity">
+
+    <ImageView
+        android:id="@+id/splash_screen"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/colorPrimaryDark"
+        android:src="@drawable/ic_logo"
+        android:scaleType="centerInside"
+        android:padding="@dimen/margin_xlarge"/>
+
+    <android.support.design.widget.TabLayout
+        android:id="@+id/general_view_tab_layout"
+        android:layout_width="match_parent"
+        app:tabSelectedTextColor="@color/colorLight"
+        app:tabTextColor="@color/colorAccent"
+        app:tabBackground="@color/colorPrimary"
+        app:tabTextAppearance="@style/CustomTabText"
+        android:layout_height="wrap_content" />
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="0dp"
+        android:layout_weight="1">
+
+        <!--General View News-->
+        <android.support.v4.view.ViewPager
+            android:id="@+id/general_view_news"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" />
+
+        <!--General View Saved-->
+        <ScrollView
+            android:id="@+id/general_view_saved"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <LinearLayout
+                android:id="@+id/general_view_saved_add"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical">
+
+                <!--Topic 0-->
+                <LinearLayout
+                    android:id="@+id/gvs_folder_new"
+                    style="@style/GVSLinearLayout">
+
+                    <TextView
+                        style="@style/GVSLinearLayoutText"
+                        android:drawableLeft="@drawable/ic_dark_folder"
+                        android:text="@string/gvs_topic0" />
+
+                    <ImageView
+                        android:id="@+id/gvs_add"
+                        style="@style/GVSLinearLayoutImage"
+                        android:src="@drawable/ic_dark_add" />
+                </LinearLayout>
+
+                <!--Topic 1-->
+                <LinearLayout
+                    android:id="@+id/gvs_folder_topic1"
+                    style="@style/GVSLinearLayout">
+
+                    <TextView
+                        style="@style/GVSLinearLayoutText"
+                        android:drawableLeft="@drawable/ic_dark_folder"
+                        android:text="@string/gvs_topic1" />
+
+                    <ImageView
+                        style="@style/GVSLinearLayoutImage"
+                        android:src="@drawable/ic_dark_trash" />
+                </LinearLayout>
+
+                <android.support.v7.widget.RecyclerView
+                    android:id="@+id/gvs_recycler_view_topic1"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content" />
+
+                <!--Topic 2-->
+                <LinearLayout
+                    android:id="@+id/gvs_folder_topic2"
+                    style="@style/GVSLinearLayout">
+
+                    <TextView
+                        style="@style/GVSLinearLayoutText"
+                        android:drawableLeft="@drawable/ic_dark_folder"
+                        android:text="@string/gvs_topic2" />
+
+                    <ImageView
+                        style="@style/GVSLinearLayoutImage"
+                        android:src="@drawable/ic_dark_trash" />
+                </LinearLayout>
+
+                <android.support.v7.widget.RecyclerView
+                    android:id="@+id/gvs_recycler_view_topic2"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content" />
+
+                <!--Topic 3-->
+                <LinearLayout
+                    android:id="@+id/gvs_folder_topic3"
+                    style="@style/GVSLinearLayout">
+
+                    <TextView
+                        style="@style/GVSLinearLayoutText"
+                        android:drawableLeft="@drawable/ic_dark_folder"
+                        android:text="@string/gvs_topic3" />
+
+                    <ImageView
+                        style="@style/GVSLinearLayoutImage"
+                        android:src="@drawable/ic_dark_trash" />
+                </LinearLayout>
+
+                <android.support.v7.widget.RecyclerView
+                    android:id="@+id/gvs_recycler_view_topic3"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content" />
+
+                <!--Topic 4-->
+                <LinearLayout
+                    android:id="@+id/gvs_folder_topic4"
+                    style="@style/GVSLinearLayout">
+
+                    <TextView
+                        style="@style/GVSLinearLayoutText"
+                        android:drawableLeft="@drawable/ic_dark_folder"
+                        android:text="@string/gvs_topic4" />
+
+                    <ImageView
+                        style="@style/GVSLinearLayoutImage"
+                        android:src="@drawable/ic_dark_trash" />
+                </LinearLayout>
+
+                <android.support.v7.widget.RecyclerView
+                    android:id="@+id/gvs_recycler_view_topic4"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content" />
+            </LinearLayout>
+
+        </ScrollView>
+
+
+        <!--General View Shared-->
+        <ScrollView
+            android:id="@+id/general_view_shared"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <LinearLayout
+                android:id="@+id/general_view_shared_add"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical">
+
+                <!--Topic 0-->
+                <LinearLayout
+                    android:id="@+id/gvsh_folder_new"
+                    style="@style/GVSLinearLayout">
+
+                    <TextView
+                        style="@style/GVSLinearLayoutText"
+                        android:drawableLeft="@drawable/ic_dark_add_person"
+                        android:text="@string/gvsh_topic0" />
+
+                    <ImageView
+                        android:id="@+id/gvsh_add"
+                        style="@style/GVSLinearLayoutImage"
+                        android:src="@drawable/ic_dark_add" />
+                </LinearLayout>
+
+                <!--Topic 1-->
+                <LinearLayout
+                    android:id="@+id/gvsh_folder_topic1"
+                    style="@style/GVSLinearLayout">
+
+                    <TextView
+                        style="@style/GVSLinearLayoutText"
+                        android:drawableLeft="@drawable/ic_avatar01"
+                        android:text="@string/gvsh_topic1" />
+
+                    <ImageView
+                        style="@style/GVSLinearLayoutImage"
+                        android:src="@drawable/ic_dark_options" />
+                </LinearLayout>
+
+                <android.support.v7.widget.RecyclerView
+                    android:id="@+id/gvsh_recycler_view_topic1"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content" />
+
+                <!--Topic 2-->
+                <LinearLayout
+                    android:id="@+id/gvsh_folder_topic2"
+                    style="@style/GVSLinearLayout">
+
+                    <TextView
+                        style="@style/GVSLinearLayoutText"
+                        android:drawableLeft="@drawable/ic_avatar02"
+                        android:text="@string/gvsh_topic2" />
+
+                    <ImageView
+                        style="@style/GVSLinearLayoutImage"
+                        android:src="@drawable/ic_dark_options" />
+                </LinearLayout>
+
+                <android.support.v7.widget.RecyclerView
+                    android:id="@+id/gvsh_recycler_view_topic2"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content" />
+
+                <!--Topic 3-->
+                <LinearLayout
+                    android:id="@+id/gvsh_folder_topic3"
+                    style="@style/GVSLinearLayout">
+
+                    <TextView
+                        style="@style/GVSLinearLayoutText"
+                        android:drawableLeft="@drawable/ic_avatar03"
+                        android:text="@string/gvsh_topic3" />
+
+                    <ImageView
+                        style="@style/GVSLinearLayoutImage"
+                        android:src="@drawable/ic_dark_options" />
+                </LinearLayout>
+
+                <android.support.v7.widget.RecyclerView
+                    android:id="@+id/gvsh_recycler_view_topic3"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content" />
+
+                <!--Topic 4-->
+                <LinearLayout
+                    android:id="@+id/gvsh_folder_topic4"
+                    style="@style/GVSLinearLayout">
+
+                    <TextView
+                        style="@style/GVSLinearLayoutText"
+                        android:drawableLeft="@drawable/ic_avatar04"
+                        android:text="@string/gvsh_topic4" />
+
+                    <ImageView
+                        style="@style/GVSLinearLayoutImage"
+                        android:src="@drawable/ic_dark_options" />
+                </LinearLayout>
+
+                <android.support.v7.widget.RecyclerView
+                    android:id="@+id/gvsh_recycler_view_topic4"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content" />
+            </LinearLayout>
+
+
+        </ScrollView>
+
+    </RelativeLayout>
+
+    //Menu
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/container_medium_large"
+        android:background="@color/colorPrimary"
+        android:orientation="horizontal">
+
+        <LinearLayout
+            android:id="@+id/menu_general_news"
+            style="@style/MenuGeneral">
+
+            <ImageView
+                android:id="@+id/menu_general_news_image"
+                style="@style/MenuGeneralImage"
+                android:src="@drawable/ic_white_news" />
+
+            <TextView
+                android:id="@+id/menu_general_news_text"
+                style="@style/MenuGeneralText"
+                android:text="@string/general_menu_news" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/menu_general_saved"
+            style="@style/MenuGeneral">
+
+            <ImageView
+                android:id="@+id/menu_general_saved_image"
+                style="@style/MenuGeneralImage"
+                android:src="@drawable/ic_medium_saved" />
+
+            <TextView
+                android:id="@+id/menu_general_saved_text"
+                style="@style/MenuGeneralText"
+                android:text="@string/general_menu_saved" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/menu_general_shared"
+            style="@style/MenuGeneral">
+
+            <ImageView
+                android:id="@+id/menu_general_shared_image"
+                style="@style/MenuGeneralImage"
+                android:src="@drawable/ic_medium_shared" />
+
+            <TextView
+                android:id="@+id/menu_general_shared_text"
+                style="@style/MenuGeneralText"
+                android:text="@string/general_menu_shared" />
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+</LinearLayout>

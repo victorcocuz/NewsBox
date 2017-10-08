@@ -1,0 +1,38 @@
+<resources>
+    <string name="app_name">NewsBox</string>
+    <string name="fragment_1">Highlights</string>
+    <string name="fragment_2">Technology</string>
+    <string name="fragment_3">Science</string>
+    <string name="fragment_4">Health</string>
+
+    <string name="settings_menu_item">Settings</string>
+    <string name="settings_title">News Settings</string>
+    <string name="settings_page_size_label">Number of Pages</string>
+    <string name="settings_page_size_key" translatable="false">page_size</string>
+    <string name="settings_page_size_default">10</string>
+
+    <string name="hint_title">Title</string>
+    <string name="hint_author">Author</string>
+    <string name="hint_trail_text">Trail Text</string>
+    <string name="hint_web_publication_date">XXXX-XX-XX</string>
+    <string name="hint_web_publication_time">XX-XX-XX</string>
+
+    <string name="search">Search News</string>
+
+    <string name="general_menu_news">News</string>
+    <string name="general_menu_saved">Saved</string>
+    <string name="general_menu_shared">Shared</string>
+
+    <string name="gvs_topic0">Add New Folder</string>
+    <string name="gvs_topic1">Global Warming</string>
+    <string name="gvs_topic2">Travel to Mars</string>
+    <string name="gvs_topic3">Africa Industrialization</string>
+    <string name="gvs_topic4">Universal Income</string>
+
+    <string name="gvsh_topic0">Add New Contact</string>
+    <string name="gvsh_topic1">Jackie Johnson</string>
+    <string name="gvsh_topic2">Nick Smith</string>
+    <string name="gvsh_topic3">Marry Gold</string>
+    <string name="gvsh_topic4">John Jacobs</string>
+
+</resources>
